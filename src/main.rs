@@ -7,7 +7,7 @@ use sailfish::TemplateOnce;
 fn main() {
     let now = Instant::now();
 
-    clean_output_dir().expect("Failed to clear output directory");
+    fs::create_dir_all("out").expect("Failed to create ouput directory");
 
     let index = IndexPage {
         age: get_age(),
@@ -25,13 +25,6 @@ fn get_age() -> u8 {
     let dob = utc.ymd(2001, 7, 30);
     let age = Utc::today().signed_duration_since(dob).num_days() as f64 / 365.25;
     return age as u8;
-}
-
-fn clean_output_dir() -> std::io::Result<()> {
-    match fs::remove_dir_all("out") {
-        Ok(_) => fs::create_dir_all("out"),
-        Err(e) => Err(e)
-    }
 }
 
 #[derive(TemplateOnce)]
