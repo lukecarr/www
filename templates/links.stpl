@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Links :: Luke Carr</title>
+    </head>
+    <body>
+        <% include!("./header.stpl"); %>
+        <h2>links</h2>
+        <ul>
+            <li><a href="https://sr.ht/~carr" target="_blank" rel="noopener">Sourcehut (~carr)</a></li>
+        </ul>
+    </body>
+</html>

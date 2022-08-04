@@ -1,0 +1,7 @@
+<header id="header">
+    <h1>Luke Carr</h1>
+    <nav id="nav">
+        <a href="/">about me</a>
+        <a href="/links">links</a>
+    </nav>
+</header>

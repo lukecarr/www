@@ -1,0 +1,5 @@
+localhost {
+	root * ./out
+	try_files {path} {path}.html
+	file_server
+}
