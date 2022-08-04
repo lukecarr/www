@@ -1,7 +1,8 @@
-image: rust:alpine
+image: archlinux
 oauth: pages.sr.ht/PAGES:RW
 packages:
   - hut
+  - rust
 environment:
   site: carr.srht.site
 tasks:
