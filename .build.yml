@@ -7,7 +7,7 @@ environment:
   site: carr.srht.site
 tasks:
   - package: |
-      cd $site
+      cd www
       cargo run
       tar -C out -cvz . > ../site.tar.gz
   - upload: |
