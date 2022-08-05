@@ -9,7 +9,7 @@
         <h2>about me</h2>
         <blockquote>
             <p><strong>Hi there! 👋</strong></p>
-            <p>I&apos;m a <%= age %> y/o programmer, currently working as a <strong>Software Developer</strong> at <strong>Sitel Group</strong>.</p>
+            <p>I&apos;m <%= age %> y/o, from the UK, and currently working as a <strong>Software Developer</strong> at <strong>Sitel Group</strong>.</p>
             <p>As far as open source projects go, I enjoy working on anything and everything related to <strong>education 🏫</strong>, <strong>privacy 👀</strong>, and <strong>data analysis/engineering 🗃</strong>.</p>
             <p>I currently spend most of time in <strong>Rust</strong> and <strong>Python</strong>, and I take pride in writing code that&apos;s <strong>lightweight 🪶</strong> and <strong>performant 💪</strong>!</p>
         </blockquote>
