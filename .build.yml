@@ -4,7 +4,7 @@ packages:
   - hut
   - rust
 environment:
-  site: carr.srht.site
+  site: www.carr.sh
 tasks:
   - package: |
       cd www
