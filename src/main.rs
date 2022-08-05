@@ -20,6 +20,8 @@ fn main() {
     };
     build_links(links).expect("Failed to build links page");
 
+    build_robots().expect("Failed to build robots.txt");
+
     println!("Compiled site successfully in {:.1}ms!", (now.elapsed().as_nanos() as f64) / 1e6);
 }
 
@@ -49,4 +51,8 @@ struct LinksPage {
 
 fn build_links(ctx: LinksPage) -> std::io::Result<()> {
     fs::write("out/links.html", ctx.render_once().unwrap())
+}
+
+fn build_robots() -> std::io::Result<()> {
+    fs::write("out/robots.txt", concat!("User-agent: *", "Allow: /"))
 }
