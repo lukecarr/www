@@ -6,17 +6,20 @@ use sailfish::TemplateOnce;
 
 fn main() {
     let now = Instant::now();
+    let build_time = Utc::now();
 
     fs::create_dir_all("out").expect("Failed to create ouput directory");
 
     let index = IndexPage {
         age: get_age(),
-        title: "Luke Carr".to_owned()
+        title: "Luke Carr".to_owned(),
+        build_time: build_time.to_rfc3339(),
     };
     build_index(index).expect("Failed to build index page");
 
     let links = LinksPage {
-        title: "Links :: Luke Carr".to_owned()
+        title: "Links :: Luke Carr".to_owned(),
+        build_time: build_time.to_rfc3339(),
     };
     build_links(links).expect("Failed to build links page");
 
@@ -36,7 +39,8 @@ fn get_age() -> u8 {
 #[template(path = "index.stpl")]
 struct IndexPage {
     age: u8,
-    title: String
+    title: String,
+    build_time: String,
 }
 
 fn build_index(ctx: IndexPage) -> std::io::Result<()> {
@@ -46,7 +50,8 @@ fn build_index(ctx: IndexPage) -> std::io::Result<()> {
 #[derive(TemplateOnce)]
 #[template(path = "links.stpl")]
 struct LinksPage {
-    title: String
+    title: String,
+    build_time: String,
 }
 
 fn build_links(ctx: LinksPage) -> std::io::Result<()> {

@@ -1,0 +1,4 @@
+<footer>
+    <hr>
+    <p><small>Site built at <code><%= build_time %></code>.</small></p>
+</footer>

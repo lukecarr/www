@@ -7,5 +7,6 @@
         <ul>
             <li><a href="https://sr.ht/~carr" target="_blank" rel="noopener">Sourcehut (~carr)</a></li>
         </ul>
+        <% include!("./footer.stpl"); %>
     </body>
 </html>
