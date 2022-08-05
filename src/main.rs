@@ -11,10 +11,13 @@ fn main() {
 
     let index = IndexPage {
         age: get_age(),
+        title: "Luke Carr".to_owned()
     };
     build_index(index).expect("Failed to build index page");
 
-    let links = LinksPage {};
+    let links = LinksPage {
+        title: "Links :: Luke Carr".to_owned()
+    };
     build_links(links).expect("Failed to build links page");
 
     println!("Compiled site successfully in {:.1}ms!", (now.elapsed().as_nanos() as f64) / 1e6);
@@ -30,7 +33,8 @@ fn get_age() -> u8 {
 #[derive(TemplateOnce)]
 #[template(path = "index.stpl")]
 struct IndexPage {
-    age: u8
+    age: u8,
+    title: String
 }
 
 fn build_index(ctx: IndexPage) -> std::io::Result<()> {
@@ -40,6 +44,7 @@ fn build_index(ctx: IndexPage) -> std::io::Result<()> {
 #[derive(TemplateOnce)]
 #[template(path = "links.stpl")]
 struct LinksPage {
+    title: String
 }
 
 fn build_links(ctx: LinksPage) -> std::io::Result<()> {
