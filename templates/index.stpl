@@ -9,7 +9,7 @@
                 <p><strong>Hi there! &#128075;</strong></p>
                 <p>I&apos;m a <%= age %> y/o from the UK, currently working as a <strong>Software Developer</strong> at <strong>Sitel Group</strong>.</p>
                 <p>As far as open source projects go, I enjoy working on anything and everything related to <strong>education &#127979;</strong>, <strong>privacy &#128064;</strong>, and <strong>data analysis/engineering &#128451;</strong>.</p>
-                <p>I currently spend most of time in <strong>Rust</strong> and <strong>Python</strong>, and I take pride in writing code that&apos;s <strong>lightweight &#127811;</strong> and <strong>performant &#128170;</strong>!</p>
+                <p>I currently spend most of time in <strong>Rust</strong> and <strong>TypeScript</strong>, and I take pride in writing code that&apos;s <strong>lightweight &#127811;</strong> and <strong>performant &#128170;</strong>!</p>
             </blockquote>
         </section>
         <section id="about-the-site">
@@ -17,11 +17,9 @@
             <blockquote>
                 <p>This site is built using a <strong>custom static site generator</strong> made with <strong>Rust</strong><a href="#site-ref-1"><sup>[1]</sup></a>.</p>
                 <p>It has <strong>no CSS or JavaScript</strong> and each page weighs in at a <strong>few kilobytes</strong>.</p>
-                <p>The site is hosted on a single VPS with 1 GiB RAM<a href="#site-ref-2"><sup>[2]</sup></a>, running a sole web server process to serve static files and handle TLS<a href="#site-ref-3"><sup>[3]</sup></a>.</p>
+                <p>The site is hosted on Cloudflare Pages, using GitHub Actions to automate building and deployment when a new tag is pushed.</p>
                 <hr>
                 <p id="site-ref-1"><sup>[1]</sup> <a href="https://github.com/rust-sailfish/sailfish" target="_blank" rel="noopener">Sailfish</a> is used for templating. The entire generator codebase comes in at &lt;100 LOC.</p>
-                <p id="site-ref-2"><sup>[2]</sup> Hosted at <a href="https://1984.hosting" target="_blank" rel="noopener">1984 Hosting</a>: <strong>not affiliated</strong>, but a very happy customer!</p>
-                <p id="site-ref-3"><sup>[3]</sup> Web server currently used is <a href="https://caddyserver.com/v2" target="_blank" rel="noopener">Caddy 2</a>.</p>
             </blockquote>
         </section>
         <% include!("./footer.stpl"); %>
