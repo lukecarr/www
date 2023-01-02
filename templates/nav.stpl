@@ -1,4 +1,4 @@
 <nav id="nav">
-    <a href="/">home</a>
-    <a href="/links">links</a>
+    <a href="index.html">home</a>
+    <a href="links.html">links</a>
 </nav>
