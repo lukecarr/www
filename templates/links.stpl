@@ -5,7 +5,9 @@
         <% include!("./header.stpl"); %>
         <h2>links</h2>
         <ul>
-            <li><a href="https://sr.ht/~carr" target="_blank" rel="noopener">Sourcehut (~carr)</a></li>
+            <% for link in &links { %>
+                <li><a href="<%= link.href %>" target="_blank" rel="noopener"><%= link.text %></a></li>
+            <% } %>
         </ul>
         <% include!("./footer.stpl"); %>
     </body>
