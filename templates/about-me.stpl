@@ -2,8 +2,8 @@
     <h2>about me</h2>
     <blockquote>
         <p><strong>Hi there! &#128075;</strong></p>
-        <p>I&apos;m a <%= age %> y/o from the UK, currently working as a <strong>Software Developer</strong> at <strong>Foundever</strong>.</p>
-        <p>As far as open source projects go, I enjoy working on anything and everything related to <strong>education &#127979;</strong>, <strong>privacy &#128064;</strong>, and <strong>data analysis/engineering &#128451;</strong>.</p>
+        <p>I&apos;m a <%= age %> y/o from the UK, currently working as a <strong>Software Developer</strong> at <strong>Met Office</strong>.</p>
+        <p>As far as open source projects go, I enjoy working on anything and everything related to <strong>game development &#127918;</strong>, <strong>privacy &#128064;</strong>, and <strong>data analysis/engineering &#128451;</strong>.</p>
         <p>I currently spend most of time in <strong>Rust</strong> and <strong>TypeScript</strong>, and I take pride in writing code that&apos;s <strong>lightweight &#127811;</strong> and <strong>performant &#128170;</strong>!</p>
     </blockquote>
 </section>
