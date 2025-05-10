@@ -1,9 +1,9 @@
 use std::fs;
 
 use chrono::Utc;
-use sailfish::TemplateOnce;
+use sailfish::TemplateSimple;
 
-#[derive(TemplateOnce)]
+#[derive(TemplateSimple)]
 #[template(path = "links.stpl")]
 struct LinksPage {
     title: &'static str,
