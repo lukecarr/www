@@ -5,4 +5,4 @@ edition = "2021"
 
 [dependencies]
 chrono = "0.4"
-sailfish = "0.8"
+sailfish = "0.9"
