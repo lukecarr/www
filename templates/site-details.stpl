@@ -2,7 +2,7 @@
     <h2>about this site</h2>
     <blockquote>
         <p>The site is built using a <strong>custom static site generator</strong> made with <strong>Rust</strong><a href="#site-ref-1"><sup>[1]</sup></a>.</p>
-        <p>It has <strong>no CSS or JavaScript</strong> and each page weighs in at a <strong>few kilobytes</strong>.</p>
+        <p>It has <strong>no CSS or JavaScript</strong> and <strong>the entire site weighs in at a just few kilobytes</strong>!</p>
         <p>The site is hosted on Cloudflare Pages, using GitHub Actions to automate building and deployment when a new tag is pushed.</p>
         <p>The site has a perfect <strong>Google Lighthouse</strong><a href="#site-ref-2"><sup>[2]</sup></a> rating for both desktop and mobile devices, ensuring that it's both performant and accessible.</p>
         <hr>
