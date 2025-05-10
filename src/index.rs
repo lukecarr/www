@@ -1,7 +1,7 @@
 use std::fs;
 
 use chrono::{TimeZone, Utc};
-use sailfish::TemplateOnce;
+use sailfish::TemplateSimple;
 
 fn get_age() -> u8 {
     let utc = Utc;
@@ -13,7 +13,7 @@ fn get_age() -> u8 {
     age as u8
 }
 
-#[derive(TemplateOnce)]
+#[derive(TemplateSimple)]
 #[template(path = "index.stpl")]
 struct IndexPage {
     age: u8,
