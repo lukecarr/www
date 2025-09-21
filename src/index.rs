@@ -1,12 +1,11 @@
 use std::fs;
 
-use chrono::{TimeZone, Utc};
+use chrono::Utc;
 use sailfish::TemplateSimple;
 
 #[derive(TemplateSimple)]
 #[template(path = "index.stpl")]
 struct IndexPage {
-    age: u8,
     title: &'static str,
     build_time: String,
 }
